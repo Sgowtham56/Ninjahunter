@@ -10,7 +10,7 @@ class hunter{
     System.out.println(b);
     System.out.println(c);
     System.out.println(a+b+c);
-         System.out.println(d);
+         System.out.println("Add to value"+ d);
 
     }
 }
