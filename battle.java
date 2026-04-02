@@ -3,7 +3,6 @@ class battle{
     {
         int man power = 10000;
         int fly power = 4500;
-        int gun = 1000000;
         int gun powder value = 100;
         int vechical power = 6000;
         int nuclear weppon = 1000;
