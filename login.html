@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+<style>
+    body{
+    margin: 0px;
+    font-family: Arial;
+    background: #f5f6fa;
+    background-image: url("522766-toolbox-wallpaper-toolbox-background-toolbox-wallpaper-and-toolbox-icon-transparent-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    color: blue;
+    font-family: 'Times New Roman';
+}
+button{
+    color: rgb(255, 255, 255);
+    background: #3116ca;
+    font-family:'Times New Roman', Times, serif;
+}
+input{
+    border-radius: 10px;
+    background: #ffffff;
+    border-color: white;
+}
+</style>
+</head>
+<body>
+    <center>
+    <div>
+        <h1>Login</h1>
+        <br>
+        <input type="text" name="Username" placeholder="Username">
+        <br>
+        <br>
+        <input type="text" name="Password" placeholder="Password">
+        <br><br>
+        <button onclick="login()">login</button><span><button>Signup</button></span>
+        <p id="msg"></p>
+    </div>
+    </center>
+    <script>
+        function login(){
+            var
+            user=document.getElementById("username")
+            .value;
+            var
+            pass=document.getElemetById("password")
+            .value;
+
+            if(user=="gowtham" && pass=="Gowtham.sgm"){
+                window.location="home.html";
+            }
+            else{
+                document.getElementById("msg").innerHTML="Wrong username or password";
+            }
+        }
+    </script>
+</body>
+</html>
